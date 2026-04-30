@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Nahima Laguerre.">
+        <meta name="description" content="Post and discover college activities, events, and networking opportunities. Connect with students and explore campus life. Keywords: college events, student activities, campus networking.">
+        <title>Activites</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="ActivitiesJava.js"></script>
+    </head>
+
+    <body onload="showLastModified()">
+
+        <header>
+            <h1>Activites</h1>
+            <nav>
+              <a href="index.html">Home</a>
+<a href="Activities.html">Activities</a>
+<a href="contactmepage.html">Contact</a>
+            </nav>
+        </header>
+
+<section>
+    <h2>Post An Activity</h2>
+    <input type="text" id="activityTitle" placeholder="Activity Name"><br><br>
+    <input type="text" id="school" placeholder="School"><br><br>
+    <input type="text" id="location" placeholder="Location"><br><br>
+    <input type="date" id="date"><br><br>
+    <input type="text" id="person" placeholder="person"><br><br>
+    <textarea id="comments" placeholder="Additional Comments"></textarea><br><br>
+    <input type="file" id="flyerInput" accept="image/*"><br><br>
+    <button onclick="addActivity()">Post Activity</button>
+    <div id="activityList"></div>
+</section>
+
+
+    <footer>
+        <p>Due Date: April 30, 2026</p>
+        <div id="lastModified"></div>
+    </footer>
+     </body>
+</html>
